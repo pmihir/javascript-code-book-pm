@@ -22,7 +22,7 @@ export const serve = (
       })
     );
   } else {
-    const packagePath = require.resolve('@jscode-book/local-client/build/index.html');
+    const packagePath = require.resolve('@javascript-code-book-pm/local-client/build/index.html');
     app.use(express.static(path.dirname(packagePath)));
   }
 

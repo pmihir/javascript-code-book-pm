@@ -1,5 +1,5 @@
 import { Command } from 'commander';
-import { serve } from '@jscode-book/local-api';
+import { serve } from '@javascript-code-book-pm/local-api';
 import path from 'path';
 
 const isProduction = process.env.NODE_ENV === 'production';

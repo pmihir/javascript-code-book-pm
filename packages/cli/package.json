@@ -1,5 +1,5 @@
 {
-  "name": "jscode-book",
+  "name": "javascript-code-book-pm",
   "version": "1.0.0",
   "description": "",
   "files": [
@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@jscode-book/local-api": "^1.0.0",
+    "@javascript-code-book-pm/local-api": "^1.0.0",
     "commander": "^7.2.0"
   },
   "devDependencies": {
@@ -25,5 +25,5 @@
     "esbuild": "0.8.26",
     "typescript": "^4.3.2"
   },
-  "gitHead": "78cf8fc428f098e8e5a4938d23859ea6b1de022d"
+  "gitHead": "51946d56d4a288a1e2a1987d2e2beb422825dda0"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@jscode-book/local-api",
+  "name": "@javascript-code-book-pm/local-api",
   "version": "1.0.0",
   "description": "",
   "files": [
@@ -23,7 +23,7 @@
     "typescript": "^4.3.2"
   },
   "dependencies": {
-    "@jscode-book/local-client": "^1.0.0",
+    "@javascript-code-book-pm/local-client": "^1.0.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "http-proxy-middleware": "^2.0.0"
