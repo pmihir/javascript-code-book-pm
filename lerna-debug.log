@@ -1,12 +1,128 @@
 0 silly argv {
-0 silly argv   _: [ 'add' ],
-0 silly argv   scope: 'local-api',
-0 silly argv   globs: [],
+0 silly argv   _: [ 'publish' ],
+0 silly argv   push: false,
+0 silly argv   composed: 'publish',
 0 silly argv   lernaVersion: '3.22.1',
-0 silly argv   '$0': 'C:\\Users\\Mihir Panchal\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js',
-0 silly argv   pkg: 'local-client'
+0 silly argv   '$0': 'C:\\Users\\Mihir Panchal\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js'
 0 silly argv }
 1 notice cli v3.22.1
 2 verbose rootPath E:\Pesto\React-Codebook
-3 error Error: 404 Not Found - GET https://registry.npmjs.org/local-client - Not found
-3 error     at C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\@evocateur\npm-registry-fetch\check-response.js:104:15
+3 verbose session c13afc02309651ff
+4 verbose user-agent lerna/3.22.1/node@v12.18.3+x64 (win32)
+5 silly argv {
+5 silly argv   _: [ 'publish' ],
+5 silly argv   push: false,
+5 silly argv   composed: 'publish',
+5 silly argv   lernaVersion: '3.22.1'
+5 silly argv }
+6 verbose rootPath E:\Pesto\React-Codebook
+7 info current version 1.0.0
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly currentBranch
+11 verbose currentBranch master
+12 silly hasTags
+13 verbose hasTags true
+14 silly git-describe.sync "v1.0.0-3-gc717581" => {"lastTagName":"v1.0.0","lastVersion":"v1.0.0","refCount":"3","sha":"c717581","isDirty":false}
+15 info Looking for changed packages since v1.0.0
+16 silly checking diff packages/cli
+17 silly found diff in packages/cli/package-lock.json
+17 silly found diff in packages/cli/package.json
+17 silly found diff in packages/cli/src/commands/serve.ts
+18 verbose filtered diff [
+18 verbose filtered diff   'packages/cli/package-lock.json',
+18 verbose filtered diff   'packages/cli/package.json',
+18 verbose filtered diff   'packages/cli/src/commands/serve.ts'
+18 verbose filtered diff ]
+19 silly checking diff packages/local-api
+20 silly found diff in packages/local-api/package.json
+20 silly found diff in packages/local-api/src/index.ts
+21 verbose filtered diff [
+21 verbose filtered diff   'packages/local-api/package.json',
+21 verbose filtered diff   'packages/local-api/src/index.ts'
+21 verbose filtered diff ]
+22 silly checking diff packages/local-client
+23 silly found diff in packages/local-client/package.json
+24 verbose filtered diff [ 'packages/local-client/package.json' ]
+25 verbose updated javascript-code-book-pm
+26 verbose updated @javascript-code-book-pm/local-api
+27 verbose updated @javascript-code-book-pm/local-client
+28 verbose git-describe undefined => "v1.0.0-3-gc717581"
+29 silly git-describe parsed => {"lastTagName":"v1.0.0","lastVersion":"v1.0.0","refCount":"3","sha":"c717581","isDirty":false}
+30 info execute Skipping git push
+31 info execute Skipping releases
+32 silly lifecycle No script for "preversion" in "root", continuing
+33 silly lifecycle No script for "preversion" in "@javascript-code-book-pm/local-client", continuing
+34 silly lifecycle No script for "version" in "@javascript-code-book-pm/local-client", continuing
+35 silly lifecycle No script for "preversion" in "@javascript-code-book-pm/local-api", continuing
+36 silly lifecycle No script for "version" in "@javascript-code-book-pm/local-api", continuing
+37 silly lifecycle No script for "preversion" in "javascript-code-book-pm", continuing
+38 silly lifecycle No script for "version" in "javascript-code-book-pm", continuing
+39 silly lifecycle No script for "version" in "root", continuing
+40 silly gitAdd [
+40 silly gitAdd   'packages/local-client/package.json',
+40 silly gitAdd   'packages/local-client/package-lock.json',
+40 silly gitAdd   'packages/local-api/package.json',
+40 silly gitAdd   'packages/local-api/package-lock.json',
+40 silly gitAdd   'packages/cli/package.json',
+40 silly gitAdd   'packages/cli/package-lock.json',
+40 silly gitAdd   'lerna.json'
+40 silly gitAdd ]
+41 silly gitCommit v2.0.0
+42 verbose git [ 'commit', '-m', 'v2.0.0' ]
+43 silly gitTag v2.0.0
+44 verbose git [ 'tag', 'v2.0.0', '-m', 'v2.0.0' ]
+45 silly lifecycle No script for "postversion" in "javascript-code-book-pm", continuing
+46 silly lifecycle No script for "postversion" in "@javascript-code-book-pm/local-api", continuing
+47 silly lifecycle No script for "postversion" in "@javascript-code-book-pm/local-client", continuing
+48 silly lifecycle No script for "postversion" in "root", continuing
+49 info publish Publishing packages to npm...
+50 info Verifying npm credentials
+51 verbose Retrieving npm user profile
+52 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 1871ms
+53 silly npm profile get received {"tfa":false,"name":"pmihir1997","email":"pmihir98512@gmail.com","email_verified":true,"created":"2021-05-30T10:55:10.341Z","updated":"2021-05-30T11:04:23.464Z","cidr_whitelist":null}
+54 silly get npm username received {"username":"pmihir1997","tfa":false,"name":"pmihir1997","email":"pmihir98512@gmail.com","email_verified":true,"created":"2021-05-30T10:55:10.341Z","updated":"2021-05-30T11:04:23.464Z","cidr_whitelist":null}
+55 silly verifyNpmPackageAccess
+56 http fetch GET 200 https://registry.npmjs.org/-/org/pmihir1997/package?format=cli 1181ms
+57 info Checking two-factor auth mode
+58 verbose Retrieving npm user profile
+59 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 1144ms
+60 silly npm profile get received {"tfa":false,"name":"pmihir1997","email":"pmihir98512@gmail.com","email_verified":true,"created":"2021-05-30T10:55:10.341Z","updated":"2021-05-30T11:04:23.464Z","cidr_whitelist":null}
+61 silly 2FA false
+62 warn ENOLICENSE Packages javascript-code-book-pm, @javascript-code-book-pm/local-api, and @javascript-code-book-pm/local-client are missing a license.
+62 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+62 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+63 silly getCurrentSHA
+64 verbose getCurrentSHA c92334ae17b3e21249e73a66a87353a2bd416ddd
+65 silly lifecycle No script for "prepublish" in "root", continuing
+66 silly lifecycle No script for "prepare" in "root", continuing
+67 silly lifecycle No script for "prepublishOnly" in "root", continuing
+68 silly lifecycle No script for "prepack" in "root", continuing
+69 verbose pack-directory packages\local-client
+70 silly lifecycle No script for "prepublish" in "@javascript-code-book-pm/local-client", continuing
+71 silly lifecycle No script for "prepare" in "@javascript-code-book-pm/local-client", continuing
+72 silly lifecycle "prepublishOnly" starting in "@javascript-code-book-pm/local-client"
+73 info lifecycle @javascript-code-book-pm/local-client@2.0.0~prepublishOnly: @javascript-code-book-pm/local-client@2.0.0
+74 verbose lifecycle @javascript-code-book-pm/local-client@2.0.0~prepublishOnly: unsafe-perm in lifecycle true
+75 verbose lifecycle @javascript-code-book-pm/local-client@2.0.0~prepublishOnly: PATH: C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\npm-lifecycle\node-gyp-bin;E:\Pesto\React-Codebook\packages\local-client\node_modules\.bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Users\Mihir Panchal\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Program Files\mongodb-win32-x86_64-2012plus-4.2.5\bin;C:\Users\Mihir Panchal\AppData\Local\Programs\Microsoft VS Code\bin;D:\Kubernetes;C:\Program Files\Docker Toolbox;C:\Program Files\Kubernetes\Minikube;C:\Program Files\heroku\bin;C:\Users\Mihir Panchal\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Mihir Panchal\AppData\Roaming\npm
+76 verbose lifecycle @javascript-code-book-pm/local-client@2.0.0~prepublishOnly: CWD: E:\Pesto\React-Codebook\packages\local-client
+77 silly lifecycle @javascript-code-book-pm/local-client@2.0.0~prepublishOnly: Args: [ '/d /s /c', 'npm run build' ]
+78 silly lifecycle @javascript-code-book-pm/local-client@2.0.0~prepublishOnly: Returned: code: 0  signal: null
+79 silly lifecycle "prepublishOnly" finished in "@javascript-code-book-pm/local-client"
+80 silly lifecycle No script for "prepack" in "@javascript-code-book-pm/local-client", continuing
+81 error ZlibError: zlib: invalid code lengths set
+81 error     at Unzip.<anonymous> (C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\minizlib\index.js:73:52)
+81 error     at Unzip.emit (events.js:327:22)
+81 error     at Zlib.zlibOnError [as onerror] (zlib.js:183:8)
+81 error     at processChunkSync (zlib.js:426:12)
+81 error     at Unzip.ZlibBase._processChunk (zlib.js:401:12)
+81 error     at Unzip.write (C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\minizlib\index.js:140:30)
+81 error     at Object.write (C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\tar\lib\parse.js:305:58)
+81 error     at Yallist.<anonymous> (C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\minipass\index.js:374:18)
+81 error     at Yallist.forEach (C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\yallist\yallist.js:156:8)
+81 error     at ReadStream.emit (C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\minipass\index.js:373:20)
+81 error     at ReadStream.emit (C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:154:22)
+81 error     at ReadStream.write (C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\minipass\index.js:163:17)
+81 error     at ReadStream.[_handleChunk] (C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:131:19)
+81 error     at ReadStream.[_onread] (C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:109:32)
+81 error     at C:\Users\Mihir Panchal\AppData\Roaming\npm\node_modules\lerna\node_modules\fs-minipass\index.js:101:22
