@@ -1,6 +1,6 @@
 {
   "name": "javascript-code-book-pm",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "files": [
     "dist"
@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@javascript-code-book-pm/local-api": "^1.0.0",
+    "@javascript-code-book-pm/local-api": "^2.0.0",
     "commander": "^7.2.0"
   },
   "devDependencies": {
